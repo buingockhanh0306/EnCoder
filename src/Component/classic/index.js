@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Box, Typography, TextField } from "@mui/material";
 import SwitchButton from "../Switch";
 
-function Classic(props) {
+function Classic() {
   const [strEnCode, setStrEnCode] = React.useState("");
   const [switchBtn, setSwitchBtn] = React.useState(false);
   const [isChecked, setIsChecked] = React.useState(false);
@@ -81,7 +81,6 @@ function Classic(props) {
           size="small"
           label="Chỉ số"
           type="number"
-          inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
           id="fullWidth"
           sx={{ width: "80px", textAlign: "center" }}
         />

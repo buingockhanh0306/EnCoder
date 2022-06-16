@@ -8,6 +8,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Classic from "./Component/classic";
+import NoName from "./Component/noName";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -95,7 +96,7 @@ export default function App() {
             aria-label="full width tabs example"
           >
             <Tab label="Classic" {...a11yProps(0)} />
-            <Tab label="Item Two" {...a11yProps(1)} />
+            <Tab label="Mã hóa..." {...a11yProps(1)} />
             <Tab label="Item Three" {...a11yProps(2)} />
           </Tabs>
         </AppBar>
@@ -109,7 +110,7 @@ export default function App() {
           </TabPanel>
 
           <TabPanel value={value} index={1} dir={theme.direction}>
-            Item Two
+            <NoName/>
           </TabPanel>
 
           <TabPanel value={value} index={2} dir={theme.direction}>
